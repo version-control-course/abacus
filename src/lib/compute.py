@@ -17,8 +17,10 @@ class Compute:
     def divide(self):
         pass
 
-    ddef multiply(self):
-        sum  = 1
+    def multiply(self):
+        if self.operands is None:
+            return
+        product = 1
         for item in self.operands:
-            sum *= item
-        print(sum)
+            product *= item
+        print(product)
