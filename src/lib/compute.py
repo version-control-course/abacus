@@ -14,5 +14,8 @@ class Compute:
     def divide(self):
         pass
 
-    def multiply(self):
-        pass
+    ddef multiply(self):
+        sum  = 1
+        for item in self.operands:
+            sum *= item
+        print(sum)
